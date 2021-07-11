@@ -1,14 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import BeerView from '../views/BeerView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/beers',
+    name: 'BeerView',
+    component: BeerView,
+    alias: '/'
   },
   {
     path: '/about',
